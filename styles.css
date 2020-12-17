@@ -1,0 +1,42 @@
+html{
+    background-color: cornflowerblue;
+}
+#hed{
+    text-align: center;
+    width: 50%;
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-color:rgb(214, 212, 206);
+    border-radius: 10px;
+    border-width: 10px;
+    font-size: 130%;
+}
+#hFont{
+    color: rgb(214, 212, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+#hed:hover{
+    text-shadow: 2px 2px 4px #fff1f1;
+    box-shadow: 2px 2px 4px #fff1f1;
+}
+.hand-options{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.hands{
+    padding: 10px;
+    margin: auto;
+}
+.hands:hover{
+    size: 2%;
+}
+img{
+    height:250px;
+}
