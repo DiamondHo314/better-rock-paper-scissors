@@ -1,6 +1,15 @@
 html{
     background-color: cornflowerblue;
 }
+.score{
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 8%;
+    text-align: start;
+}
+.hed-and-score{
+    text-align: start;
+}
 #hed{
     text-align: center;
     width: 50%;
@@ -17,26 +26,41 @@ html{
     color: rgb(214, 212, 206);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    display: block;
+    padding: 20px;
+    word-wrap: break-word;
 }
 #hed:hover{
     text-shadow: 2px 2px 4px #fff1f1;
     box-shadow: 2px 2px 4px #fff1f1;
 }
 .hand-options{
+    margin: auto;
+    text-align: center;
+    width: 70%;
     display: flex;
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    padding: 70px;
 }
 .hands{
+    max-width: 100%;
+    width: 50%;
+    height: auto;
     padding: 10px;
     margin: auto;
 }
 .hands:hover{
-    size: 2%;
+    cursor: pointer;
+    width: 60%;
 }
-img{
-    height:250px;
-}
+/*.score-board{
+    max-width: 100%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    color: cornsilk;
+    font-size: 30px;
+    padding: 40px;
+    padding-bottom: 40px;
+    border: solid;
+    border-radius: 10px;
+}*/
