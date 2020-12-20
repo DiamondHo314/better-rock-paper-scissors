@@ -1,21 +1,58 @@
 html{
     background-color: cornflowerblue;
 }
-.score{
+h2{
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+}
+.score-player{
     color: cornsilk;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 8%;
-    text-align: start;
+    margin-right: auto;
+    padding: 10px;
+    border: solid;
+    border-radius: 10px;
+    background-color: rgb(111, 199, 89);
+    margin-bottom: auto;
+    width: 10%;
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
-.hed-and-score{
-    text-align: start;
-}
-#hed{
-    text-align: center;
-    width: 50%;
+.score-comp{
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 8%;
     margin-left: auto;
+    padding: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: rgb(180, 75, 75);
+    width: 10%;
+    margin-bottom: auto;
+    border: solid;
+    border-radius: 10px;
+}
+.scorebrd{
+    border: solid;
+}
+.hed-and-score{
+    position: relative;
+    display: flex;
+}
+.hed-padding {
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    margin-left: auto;
     margin-right: auto;
+    text-align: center;
+}
+#hed{
+    position: relative;
+    width: 100%;
+    margin-top: 8%;
     border: solid;
     border-color:rgb(214, 212, 206);
     border-radius: 10px;
@@ -29,17 +66,20 @@ html{
     display: block;
     padding: 20px;
     word-wrap: break-word;
+    text-align: center;
 }
 #hed:hover{
     text-shadow: 2px 2px 4px #fff1f1;
     box-shadow: 2px 2px 4px #fff1f1;
 }
 .hand-options{
+    position: relative;
     margin: auto;
     text-align: center;
     width: 70%;
     display: flex;
     padding: 70px;
+    padding-bottom: 30px;
 }
 .hands{
     max-width: 100%;
@@ -52,15 +92,3 @@ html{
     cursor: pointer;
     width: 60%;
 }
-/*.score-board{
-    max-width: 100%;
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    color: cornsilk;
-    font-size: 30px;
-    padding: 40px;
-    padding-bottom: 40px;
-    border: solid;
-    border-radius: 10px;
-}*/
