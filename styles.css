@@ -12,13 +12,11 @@ h2{
     margin-top: 8%;
     margin-right: auto;
     padding: 10px;
-    border: solid;
-    border-radius: 10px;
-    background-color: rgb(111, 199, 89);
     margin-bottom: auto;
-    width: 10%;
+    width: 12%;
     padding-top: 1px;
     padding-bottom: 1px;
+    font-size: 18px;
 }
 .score-comp{
     color: cornsilk;
@@ -28,14 +26,31 @@ h2{
     padding: 10px;
     padding-top: 1px;
     padding-bottom: 1px;
-    background-color: rgb(180, 75, 75);
-    width: 10%;
+    width: 12%;
     margin-bottom: auto;
-    border: solid;
-    border-radius: 10px;
 }
-.scorebrd{
-    border: solid;
+table{
+    border: 10px solid ;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 8px rgb(141, 141, 141); /* this draws the table border  */ 
+    word-wrap: break-word;
+    text-align: center;
+}
+td{
+    padding: 17px; 
+    background-color: rgb(141, 141, 141);
+    font-size: 20px;
+}
+.bgcolor-player{
+    background-color: rgb(111, 199, 89);
+    padding: 20px;
+}
+.bgcolor-comp{
+    background-color: rgb(180, 75, 75);
+    padding: 20px;
 }
 .hed-and-score{
     position: relative;
