@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="game.js"></script>
 </head>
 <body>
 
@@ -15,7 +16,7 @@
                         <th class="bgcolor-player">You</th>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td id="player-score">0</td>
                     </tr>
                 </table>
             </div>
@@ -32,7 +33,7 @@
                         <th class="bgcolor-comp">Computer</th>
                     </tr>
                     <tr>
-                        <td>0</td>
+                        <td id="comp-score">0</td>
                     </tr>
                 </table>
             </div>
@@ -40,13 +41,13 @@
 
     <div class="hand-options">
         <div id="rock">
-        <img src="transRockImg.png" alt="rocc" class="hands" id="sepHands0">
+            <input type="image" src="transRockImg.png" class="hands" id="rockHands">
         </div>
         <div id="paper">
-            <img src="transPaperImg.png" alt="paper" class="hands" id="sepHands1">
+            <input type="image" src="transPaperImg.png" class="hands" id="paperHands">
         </div>
         <div id="scissors">
-            <img src="transScisImg.png" alt="scissors" class="hands" id="sepHands2">
+            <input type="image" src="transScisImg.png" class="hands" id="scissorHands">
         </div>
     </div>
 
