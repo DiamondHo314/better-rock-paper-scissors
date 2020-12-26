@@ -1,4 +1,4 @@
- function computerPlay(){
+function computerPlay(){
 
         let choices = ["rock", "paper", "scissors"];
 
@@ -9,41 +9,14 @@
         return randomChoice;
         
         }
-    
-let pickRock = document.getElementById("rockHands");
-if(pickRock){
-    pickRock.addEventListener("click", rockChosen);
-}
 
-function rockChosen(){
-    return pickRock;
-}
-
-let pickPaper = document.getElementById("paperHands");
-if(pickPaper){
-    pickPaper.addEventListener("click", paperChosen);
-}
-
-function paperChosen(){
-    return pickPaper;
-}
-
-let pickScissors = document.getElementById("scissorHands");
-if(pickScissors){
-    pickScissors.addEventListener("click", scissorChosen);
-}
-
-function scissorChosen(){
-    return pickScissors;
-}
+let options = document.getElementById("optns");
+        
+const pickRock = document.getElementById("rockHands");
+const pickPaper = document.getElementById("paperHands");
+const pickScissors = document.getElementById("scissorHands");
 
 function whoWins(playerSelection, computerSelection){
-
-        let threwRock = rockChosen();
-        let threwPaper = paperChosen();
-        let threwScis = scissorChosen();
-
-        playerSelection = [threwRock, threwPaper, threwScis];
 
         let tableScore = document.getElementById("player-score");
 
@@ -52,13 +25,13 @@ function whoWins(playerSelection, computerSelection){
         if(playerSelection === computerSelection){
             console.log("Tie!");
         }
-        else if(playerSelection === threwRock && computerSelection === "scissors"){
+        else if(playerSelection === pickRock && computerSelection === "scissors"){
             console.log("You win! Rock beats Scissors!");
         }
-        else if(playerSelection === threwScis && computerSelection === "paper"){
+        else if(playerSelection === pickScissors && computerSelection === "paper"){
             console.log("You win! Scissor beats Paper");
         }
-        else if(playerSelection === threwPaper && computerSelection === "rock"){
+        else if(playerSelection === pickPaper && computerSelection === "rock"){
             console.log("You win! Paper beats Rock");
         }
         else{
@@ -67,10 +40,6 @@ function whoWins(playerSelection, computerSelection){
         }
     }
 
-function runFor() {
-    for(let  i=1; i <= 5; i++) {
-        whoWins();    
-        }
-    }
-    
-    runFor();
+if(options){
+    options.addEventListener("click", whoWins);
+}
