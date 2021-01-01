@@ -1,45 +1,47 @@
 function computerPlay(){
 
         let choices = ["rock", "paper", "scissors"];
-
         let randomChoice = choices[Math.floor(Math.random() * choices.length)];
 
         console.log(randomChoice);
 
-        return randomChoice;
+        return randomChoice;        
+        }
         
-        }
+let playerScore = 0;
+let compScore = 0;
 
-let options = document.getElementById("optns");
+function playerWin(){
+    playerScore++;
+    let tablePointPlayer =  document.getElementById("player-score").innerHTML = playerScore;
+}
+
+function playerLose(){
+    compScore++;
+    let tablePointComp = document.getElementById("comp-score").innerHTML = compScore;
+}
         
-const pickRock = document.getElementById("rockHands");
-const pickPaper = document.getElementById("paperHands");
-const pickScissors = document.getElementById("scissorHands");
-
-function whoWins(playerSelection, computerSelection){
-
-        let tableScore = document.getElementById("player-score");
-
-        computerSelection = computerPlay();
-
-        if(playerSelection === computerSelection){
-            console.log("Tie!");
-        }
-        else if(playerSelection === pickRock && computerSelection === "scissors"){
-            console.log("You win! Rock beats Scissors!");
-        }
-        else if(playerSelection === pickScissors && computerSelection === "paper"){
-            console.log("You win! Scissor beats Paper");
-        }
-        else if(playerSelection === pickPaper && computerSelection === "rock"){
-            console.log("You win! Paper beats Rock");
-        }
-        else{
-            console.log("You lose!");
+function game(playerSelection){
+            
+    let computerSelection = computerPlay();
     
-        }
+    if(playerSelection == computerSelection){
+        console.log("Tie!");
     }
-
-if(options){
-    options.addEventListener("click", whoWins);
+    else if(playerSelection == "rock" && computerSelection == "scissors"){
+        console.log("You win! Rock beats Scissors!");
+        playerWin();
+    }
+    else if(playerSelection == "scissors" && computerSelection == "paper"){
+        console.log("You win! Scissor beats Paper");
+        playerWin();
+    }
+    else if(playerSelection == "paper" && computerSelection == "rock"){
+        console.log("You win! Paper beats Rock");
+        playerWin();
+    }
+    else{
+        console.log("You lose!");
+        playerLose();
+    }
 }

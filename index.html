@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors!</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="game.js"></script>
 </head>
 <body>
 
     <div class="hed-and-score">
-            <div class = "score-player">
-                <table>
-                    <tr>
-                        <th class="bgcolor-player">You</th>
+        <div class = "score-player">
+            <table>
+                <tr>
+                    <th class="bgcolor-player">You</th>
                     </tr>
                     <tr>
                         <td id="player-score">0</td>
                     </tr>
                 </table>
             </div>
-
+            
             <div class="hed-padding">
                 <div id="hed">
                     <h1 id="hFont">Rock, Paper, Scissors!</h1>
@@ -41,15 +40,16 @@
 
     <div class="hand-options" id="optns">
         <div id="rock">
-            <input onclick="whoWins()" type="image" src="transRockImg.png" class="hands" id="rockHands">
+            <input onclick="game('rock')" type="image" src="transRockImg.png" class="hands" id="rockHands">
         </div>
         <div id="paper">
-            <input onclick="whoWins()" type="image" src="transPaperImg.png" class="hands" id="paperHands">
+            <input onclick="game('paper')" type="image" src="transPaperImg.png" class="hands" id="paperHands">
         </div>
         <div id="scissors">
-            <input onclick="whoWins()" type="image" src="transScisImg.png" class="hands" id="scissorHands">
+            <input onclick="game('scissors')" type="image" src="transScisImg.png" class="hands" id="scissorHands">
         </div>
     </div>
-
+    
 </body>
+<script src="game.js"></script>
 </html>
